@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 username = "nandannand2003_db_user"
-password = "RV/qE!s3zMq5Hr6"
+password = "Test@123"
 encoded_password = quote_plus(password)
 client = MongoClient(
     f"mongodb+srv://{username}:{encoded_password}@cluster0.p0h3vcw.mongodb.net/?appName=Cluster0"
