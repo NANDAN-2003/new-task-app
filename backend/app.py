@@ -31,4 +31,5 @@ def delete_task(title):
     collection.delete_one({"title":title})
     return jsonify({"message":"Task deleted successfully"})
 
-if __name__=="__main__":    app.run(host="0.0.0.0", port=5000)
+if __name__=="__main__":    
+    app.run(host="0.0.0.0", port=5000)
