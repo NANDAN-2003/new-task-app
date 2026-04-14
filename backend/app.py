@@ -15,6 +15,10 @@ client = MongoClient(
 db = client["mydatabase"]
 collection = db["tasks"]
 
+@app.route("/")
+def home():
+    return "Server working"
+
 @app.route("/tasks",methods=["GET"])
 def get_tasks():
     data=list(collection.find({},{"_id":0}))
